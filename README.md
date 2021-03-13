@@ -63,5 +63,5 @@
 <p>
   The code was predominantly written in google colab and hence git was not used for version control. The version control history from google colab has been
   attached for reference:<br/>
-  ![Google Colab Version Control History](./googleColabVersionControlHistory.png?raw=true "Title")
+  <img src="https://user-images.githubusercontent.com/59820527/111028380-4e260f80-841c-11eb-9d5e-68e59b8f2011.png" alt="Google Colab Version Control History"/>
 </p>
