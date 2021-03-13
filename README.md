@@ -3,7 +3,7 @@
 <h3>Team Members</h3>
   <ol>
     <li><strong>Rishanth. R</strong> (CS18B044)</li> 
-    <li><strong>Rahul Chaurasia</strong> (CS20M002) [No contribution made to this project]</li>
+    <li><strong>Rahul Chaurasia</strong> (CS20M002)</li>
   </ol>
 <h3>Contents of the files</h3>
   <ul>
@@ -41,6 +41,22 @@
       Contains the sweep configuration.<br/>
       The bayes strategy was chosen for the sweep over grid search (computationally expensive) and random search (might settle for local minima)<br/>
       Since the entropy losses could not be logged into wandb due to aforementioned errors, validation set accuracy is the objective here with a goal to maximize it.
+    </p>
+  </li>
+  <li>
+    <strong>bestModel.py</strong>
+    <p>
+        Using the hyperparamters that gave the highest accuracy during the sweep, we train a neural network and plot the confusion matrix for the neural network over the test data using pandas and seaborn.
+    </p>
+  </li>
+  <li>
+    <strong>report.py</strong>
+    <p>
+        Due to the unresolved wandb error 'Maximum recusion depth', we could not log the cross entropy losses into wandb. The entropy and mse for the 14 runs visualised in wandb were manually collected and stored in a list of dictionaries. This is used to plot the scatter plots:<br/>
+        <ol>
+        <li>Test set mean squared error vs test set accuracy</li>
+        <li>Test set cross entropy loss vs test set accuracy</li>
+        </ol>
     </p>
   </li>
  </ul>

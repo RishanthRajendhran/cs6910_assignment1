@@ -1,16 +1,16 @@
 # Init wandb
 import wandb
 hyperparameter_defaults = dict(
-    maxIterations = 5,
+    maxIterations = 10,
     numClasses = 10,
     numLayers = 3,
-    numNeurons = 32,
+    numNeurons = 128,
     weightDecay = 0,
-    learningRate = 1e-3,
-    optimizer = "sgd",
-    batchSize = 16,
-    weightInitialisation = "xavier",
-    activationFn = "tanh",
+    learningRate = 0.0001,
+    optimizer = "momentum",
+    batchSize = 64,
+    weightInitialisation = "random",
+    activationFn = "sigmoid",
     gamma = 0.9,
     beta1 = 0.9,
     beta2 = 0.999,
@@ -121,7 +121,7 @@ def main():
     valid_mse = MSEloss(y_valid,predictions)
 
     print(f"Test Set:\nAccuracy = {test_acc}\nLoss = {test_entropy}\nMSE = {test_mse}")
-    print(f"Train Set:\nAccuracy = {valid_acc}\nLoss = {valid_entropy}\nMSE = {valid_mse}")
+    print(f"Validation Set:\nAccuracy = {valid_acc}\nLoss = {valid_entropy}\nMSE = {valid_mse}")
 
     # #Log in wandb
     metrics = {
