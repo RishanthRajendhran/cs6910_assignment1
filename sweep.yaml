@@ -1,0 +1,26 @@
+program: train.py
+method: bayes
+project: cs6910_assignment1
+entity: rishanthrajendhran
+metric:
+  name: valid_acc
+  goal: maximize
+parameters:
+  maxIterations:
+    values: [5, 10]
+  numLayers:
+    values: [3, 4, 5]
+  numNeurons:
+    values: [32, 64, 128]
+  weightDecay:
+    values: [0, 0.0005, 0.5]
+  learningRate:
+    values: [1e-3, 1e-4]
+  optimizer:
+    values: ["sgd", "momentum", "nesterov", "rmsprop", "adam", "nadam"]
+  batchSize:
+    values: [16, 32, 64]
+  weightInitialisation: 
+    values: ["random", "xavier"]
+  activationFn:
+    values: ["sigmoid", "tanh", "ReLU"]
