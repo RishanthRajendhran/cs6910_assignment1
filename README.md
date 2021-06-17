@@ -1,9 +1,7 @@
-# cs6910_assignment1
-<h1>CS6910 Assignment 1</h1>
+<h1>Neural Network From Scratch</h1>
 <h3>Team Members</h3>
   <ol>
     <li><strong>Rishanth. R</strong> (CS18B044)</li> 
-    <li><strong>Rahul Chaurasia</strong> (CS20M002)</li>
   </ol>
 <h3>Contents of the files</h3>
   <ul>
@@ -75,9 +73,4 @@
     Run the command 'wandb sweep sweep.yaml' in the project directory in the terminal.<br/>
     Then run the command 'wandb agent %sweep-agent-generated-by-previous-command-here%' to start the sweep.
   </p>
-<h3>Version Control History</h3>
-<p>
-  The code was predominantly written in google colab and hence git was not used for version control. The version control history from google colab has been
-  attached for reference:<br/>
-  <img src="https://user-images.githubusercontent.com/59820527/111028380-4e260f80-841c-11eb-9d5e-68e59b8f2011.png" alt="Google Colab Version Control History"/>
 </p>
